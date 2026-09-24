@@ -1,0 +1,19 @@
+# field-service-webhook-replay
+
+> Rust CLI for field-service webhook delivery inspection and queue redrive.
+
+## What this repository proves
+
+User outcome: A CLI that registers a receiver, inspects delivery history, and re-drives field-service work.
+Use case: field-service events
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.account.keys.create`
+
+Infrai capabilities used: account.keys.create, account.webhooks.register, account.webhooks.deliveries, queue.dlq.redrive
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

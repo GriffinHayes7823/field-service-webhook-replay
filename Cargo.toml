@@ -1,0 +1,10 @@
+[package]
+name = "field-service-webhook-replay"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Rust CLI for field-service webhook delivery inspection and queue redrive"
+
+[[bin]]
+name = "field-service-webhook-replay"
+path = "src/field_service_cli.rs"
